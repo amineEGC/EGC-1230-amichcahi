@@ -19,3 +19,10 @@ script:
 - ./manage.py makemigrations
 - ./manage.py migrate
 - coverage run --branch --source=. ./manage.py test postproc --keepdb
+deploy:
+  provider: heroku
+  app: egc-1230-amichachi
+  strategy: git
+  api_key: $HEROKU_TOKEN
+  on:
+    branch: master

@@ -2,7 +2,6 @@
 - name: Create decide user
   become: true
   user:
-    name: practica
+    name: decide
     comment: Decide app user
     state: present
-    password: practica
