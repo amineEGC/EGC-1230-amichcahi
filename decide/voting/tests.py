@@ -24,7 +24,7 @@ class VotingTestExecuted(BaseTestCase):
         super().tearDown()
     
     def test_executed(self):
-        register_status('TEST_VOTING_EXECUTED')
+        mods.register_status('TEST_VOTING_EXECUTED')
 
 class VotingTestCase(BaseTestCase):
 

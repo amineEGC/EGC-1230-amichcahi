@@ -16,7 +16,7 @@ class CensusTestExecuted(BaseTestCase):
         super().tearDown()
     
     def test_executed(self):
-        register_status('TEST_CENSUS_EXECUTED')
+        mods.register_status('TEST_CENSUS_EXECUTED')
         
 class CensusTestCase(BaseTestCase):
 
